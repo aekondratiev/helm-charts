@@ -4,7 +4,7 @@ Zabbix is a mature and effortless enterprise-class open source monitoring soluti
 
 # Introduction
 
-This [Helm](https://github.com/cetic/helm-zabbix) chart installs [Zabbix](https://www.zabbix.com) in a Kubernetes cluster.
+This [Helm](https://github.com/aekondratiev/helm-zabbix) chart installs [Zabbix](https://www.zabbix.com) in a Kubernetes cluster.
 
 ### Important note
 
@@ -70,7 +70,7 @@ kubectl create namespace monitoring
 Add Helm repo:
 
 ```bash
-helm repo add cetic https://cetic.github.io/helm-charts
+helm repo add aekondratiev https://aekondratiev.github.io/helm-charts
 ```
 
 Update the list helm chart available for installation (like ``apt-get update``). This is recommend before install/upgrade a helm chart:
@@ -82,7 +82,7 @@ helm repo update
 Export default values of chart ``helm-zabbix`` to file ``$HOME/zabbix_values.yaml``:
 
 ```bash
-helm show values cetic/zabbix > $HOME/zabbix_values.yaml
+helm show values aekondratiev/zabbix > $HOME/zabbix_values.yaml
 ```
 
 Change the values according to the environment in the file ``$HOME/zabbix_values.yaml``.
@@ -90,7 +90,7 @@ Change the values according to the environment in the file ``$HOME/zabbix_values
 Install the Zabbix helm chart with a release name `my-release`:
 
 ```bash
-helm install zabbix cetic/zabbix --dependency-update -f $HOME/zabbix_values.yaml -n monitoring
+helm install zabbix aekondratiev/zabbix --dependency-update -f $HOME/zabbix_values.yaml -n monitoring
 ```
 
 View the pods.
