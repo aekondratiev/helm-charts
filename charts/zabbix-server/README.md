@@ -1,7 +1,5 @@
 # Helm Chart For Zabbix.
 
-Zabbix is a mature and effortless enterprise-class open source monitoring solution for network monitoring and application monitoring of millions of metrics.
-
 # Introduction
 
 This [Helm](https://github.com/aekondratiev/helm-zabbix) chart installs [Zabbix](https://www.zabbix.com) in a Kubernetes cluster.
@@ -15,34 +13,6 @@ This [Helm](https://github.com/aekondratiev/helm-zabbix) chart installs [Zabbix]
 - Kubernetes cluster 1.10+
 - Helm 3.0+
 - PV provisioner support in the underlying infrastructure.
-
-# Zabbix components
-
-## Zabbix Server
-
-**Zabbix server** is the central process of Zabbix software.
-
-The server performs the polling and trapping of data, it calculates triggers, sends notifications to users. It is the central component to which Zabbix agents and proxies report data on availability and integrity of systems. The server can itself remotely check networked services (such as web servers and mail servers) using simple service checks.
-
-## Zabbix Agent
-
-**Zabbix agent** is deployed on a monitoring target to actively monitor local resources and applications (hard drives, memory, processor statistics etc).
-
-## Zabbix Web (frontend)
-
-**Zabbix web** interface is a part of Zabbix software. It is used to manage resources under monitoring and view monitoring statistics.
-
-## Zabbix Proxy
-
-> **Zabbix proxy** is not functional in this helm chart, yet.
-
-**Zabbix proxy** is a process that may collect monitoring data from one or more monitored devices and send the information to the Zabbix server, essentially working on behalf of the server. All collected data is buffered locally and then transferred to the **Zabbix server** the proxy belongs to.
-
-## PostgreSQL
-
-A database is required for zabbix to work, in this helm chart we're using Postgresql.
-
-> to use a different database make sure you use the right docker image, the docker image we're using here is for postgresql only.
 
 ## Configure the chart
 
@@ -73,13 +43,13 @@ Add Helm repo:
 helm repo add aekondratiev https://aekondratiev.github.io/helm-charts
 ```
 
-Update the list helm chart available for installation (like ``apt-get update``). This is recommend before install/upgrade a helm chart:
+Update the list helm. This is recommend before install/upgrade a helm chart:
 
 ```bash
 helm repo update
 ```
 
-Export default values of chart ``helm-zabbix`` to file ``$HOME/zabbix_values.yaml``:
+Export default values of chart to file ``$HOME/zabbix_values.yaml``:
 
 ```bash
 helm show values aekondratiev/zabbix-server > $HOME/zabbix_values.yaml
@@ -87,7 +57,7 @@ helm show values aekondratiev/zabbix-server > $HOME/zabbix_values.yaml
 
 Change the values according to the environment in the file ``$HOME/zabbix_values.yaml``.
 
-Install the Zabbix helm chart with a release name `my-release`:
+Install the Zabbix helm chart with a release name `zabbix`:
 
 ```bash
 helm install zabbix aekondratiev/zabbix-server --dependency-update -f $HOME/zabbix_values.yaml -n monitoring
