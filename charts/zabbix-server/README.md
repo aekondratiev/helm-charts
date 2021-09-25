@@ -82,7 +82,7 @@ helm repo update
 Export default values of chart ``helm-zabbix`` to file ``$HOME/zabbix_values.yaml``:
 
 ```bash
-helm show values aekondratiev/zabbix > $HOME/zabbix_values.yaml
+helm show values aekondratiev/zabbix-server > $HOME/zabbix_values.yaml
 ```
 
 Change the values according to the environment in the file ``$HOME/zabbix_values.yaml``.
@@ -90,7 +90,7 @@ Change the values according to the environment in the file ``$HOME/zabbix_values
 Install the Zabbix helm chart with a release name `my-release`:
 
 ```bash
-helm install zabbix aekondratiev/zabbix --dependency-update -f $HOME/zabbix_values.yaml -n monitoring
+helm install zabbix aekondratiev/zabbix-server --dependency-update -f $HOME/zabbix_values.yaml -n monitoring
 ```
 
 View the pods.
