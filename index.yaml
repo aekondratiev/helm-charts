@@ -1,0 +1,172 @@
+apiVersion: v1
+entries:
+  zabbix-server:
+  - apiVersion: v2
+    appVersion: 5.4.6
+    created: "2021-10-20T13:13:03.008651583Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ~10.3.6
+    description: Zabbix is a mature and effortless enterprise-class open source monitoring solution for network monitoring and application monitoring of millions of metrics.
+    digest: 3707de34a2a6f2788ad203f4f5f1be1dd08ff882ec5c546fe35c965b85ed29b4
+    home: https://www.zabbix.com/
+    icon: https://assets.zabbix.com/img/logo/zabbix_logo_500x131.png
+    keywords:
+    - zabbix
+    - monitoring
+    - metics
+    maintainers:
+    - email: andry.kondratiev@gmail.com
+      name: AndryKondratiev
+      url: https://github.com/aekondratiev
+    name: zabbix-server
+    urls:
+    - https://github.com/aekondratiev/helm-charts/releases/download/zabbix-server-1.0.6/zabbix-server-1.0.6.tgz
+    version: 1.0.6
+  - apiVersion: v2
+    appVersion: 5.4.5
+    created: "2021-10-07T09:27:49.829014434Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ~10.3.6
+    description: Zabbix is a mature and effortless enterprise-class open source monitoring solution for network monitoring and application monitoring of millions of metrics.
+    digest: a7246414cb4b50e27e0e383938a34e46274e9d134a4e097c95e5b50ad5982fd7
+    home: https://www.zabbix.com/
+    icon: https://assets.zabbix.com/img/logo/zabbix_logo_500x131.png
+    keywords:
+    - zabbix
+    - monitoring
+    - metics
+    maintainers:
+    - email: andry.kondratiev@gmail.com
+      name: AndryKondratiev
+      url: https://github.com/aekondratiev
+    name: zabbix-server
+    urls:
+    - https://github.com/aekondratiev/helm-charts/releases/download/zabbix-server-1.0.5/zabbix-server-1.0.5.tgz
+    version: 1.0.5
+  - apiVersion: v2
+    appVersion: 5.4.4
+    created: "2021-09-25T13:10:13.239695252Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ~10.3.6
+    description: Zabbix is a mature and effortless enterprise-class open source monitoring solution for network monitoring and application monitoring of millions of metrics.
+    digest: 8321f8807cc48bd4a0dd1da530b5dd64b0c276502a4a0f19d8d18055178f1344
+    home: https://www.zabbix.com/
+    icon: https://assets.zabbix.com/img/logo/zabbix_logo_500x131.png
+    keywords:
+    - zabbix
+    - monitoring
+    - metics
+    maintainers:
+    - email: andry.kondratiev@gmail.com
+      name: AndryKondratiev
+      url: https://github.com/aekondratiev
+    name: zabbix-server
+    urls:
+    - https://github.com/aekondratiev/helm-charts/releases/download/zabbix-server-1.0.4/zabbix-server-1.0.4.tgz
+    version: 1.0.4
+  - apiVersion: v2
+    appVersion: 5.4.4
+    created: "2021-09-25T13:05:42.128048434Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ~10.3.6
+    description: Zabbix is a mature and effortless enterprise-class open source monitoring solution for network monitoring and application monitoring of millions of metrics.
+    digest: aa309676ba88ff17f4bef296f0bc646fce81a0e72f04652e4bdea0d428cb7eae
+    home: https://www.zabbix.com/
+    icon: https://assets.zabbix.com/img/logo/zabbix_logo_500x131.png
+    keywords:
+    - zabbix
+    - monitoring
+    - metics
+    maintainers:
+    - email: andry.kondratiev@gmail.com
+      name: AndryKondratiev
+      url: https://github.com/aekondratiev
+    name: zabbix-server
+    urls:
+    - https://github.com/aekondratiev/helm-charts/releases/download/zabbix-server-1.0.3/zabbix-server-1.0.3.tgz
+    version: 1.0.3
+  - apiVersion: v2
+    appVersion: 5.4.4
+    created: "2021-09-25T12:36:22.582094828Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ~10.3.6
+    description: Zabbix is a mature and effortless enterprise-class open source monitoring solution for network monitoring and application monitoring of millions of metrics.
+    digest: 2212b1d0ee27a9d3f90b4d2c67bfc1818586ad7b6e83ea8570cee9ec793d7ee9
+    home: https://www.zabbix.com/
+    icon: https://assets.zabbix.com/img/logo/zabbix_logo_500x131.png
+    keywords:
+    - zabbix
+    - monitoring
+    - metics
+    maintainers:
+    - email: andry.kondratiev@gmail.com
+      name: AndryKondratiev
+      url: https://github.com/aekondratiev
+    name: zabbix-server
+    urls:
+    - https://github.com/aekondratiev/helm-charts/releases/download/zabbix-server-1.0.2/zabbix-server-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
+    appVersion: 5.4.4
+    created: "2021-09-25T12:11:22.078519887Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ~10.3.6
+    description: Zabbix is a mature and effortless enterprise-class open source monitoring solution for network monitoring and application monitoring of millions of metrics.
+    digest: 2371f59d21a1c906333c50accda819a97d80fa653fcfdc261a6b0b63ed4b1e41
+    home: https://www.zabbix.com/
+    icon: https://assets.zabbix.com/img/logo/zabbix_logo_500x131.png
+    keywords:
+    - zabbix
+    - monitoring
+    - metics
+    maintainers:
+    - email: andry.kondratiev@gmail.com
+      name: AndryKondratiev
+      url: https://github.com/aekondratiev
+    name: zabbix-server
+    urls:
+    - https://github.com/aekondratiev/helm-charts/releases/download/zabbix-server-1.0.1/zabbix-server-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: 5.4.4
+    created: "2021-09-25T11:45:21.574898449Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ~10.3.6
+    description: Zabbix is a mature and effortless enterprise-class open source monitoring solution for network monitoring and application monitoring of millions of metrics.
+    digest: d8f29e0d24320d51bcd4b54d34d3edd9898b048a026d0f6ce7ec1073dde8c26b
+    home: https://www.zabbix.com/
+    icon: https://assets.zabbix.com/img/logo/zabbix_logo_500x131.png
+    keywords:
+    - zabbix
+    - monitoring
+    - metics
+    maintainers:
+    - email: andry.kondratiev@gmail.com
+      name: AndryKondratiev
+      url: https://github.com/aekondratiev
+    name: zabbix-server
+    urls:
+    - https://github.com/aekondratiev/helm-charts/releases/download/zabbix-server-1.0.0/zabbix-server-1.0.0.tgz
+    version: 1.0.0
+generated: "2021-09-25T11:45:21.319210363Z"
