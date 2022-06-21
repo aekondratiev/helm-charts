@@ -1,15 +1,71 @@
-<h1>Usage</h1>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-Helm must be installed to use the charts. Please refer to Helm’s documentation to get started.
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Usage | helm-charts</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Usage" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://aekondratiev.github.io/helm-charts/" />
+<meta property="og:url" content="https://aekondratiev.github.io/helm-charts/" />
+<meta property="og:site_name" content="helm-charts" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Usage" />
+<script type="application/ld+json">
+{"url":"https://aekondratiev.github.io/helm-charts/","@type":"WebSite","headline":"Usage","name":"helm-charts","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
 
-Once Helm has been set up correctly, add the repo as follows:
+    <link rel="stylesheet" href="/helm-charts/assets/css/style.css?v=c1c216be9a8c762313796ea88555b043b2d703d0">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
-helm repo add aekondratiev https://diegofnunesbr.github.io/helm-charts/
-If you had already added this repo earlier, run helm repo update to retrieve the latest versions of the packages. You can then run helm search repo diegofnunesbr to see the charts.
+<!-- Setup Google Analytics -->
 
-To install the chart:
 
-helm install zabbix diegofnunesbr/zabbix-server
-To uninstall the chart:
 
-helm delete zabbix
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/helm-charts/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="https://aekondratiev.github.io/helm-charts/">helm-charts</a></h1>
+      
+
+      <h2 id="usage">Usage</h2>
+
+<p><a href="https://helm.sh">Helm</a> must be installed to use the charts.  Please refer to
+Helm’s <a href="https://helm.sh/docs">documentation</a> to get started.</p>
+
+<p>Once Helm has been set up correctly, add the repo as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>helm repo add aekondratiev https://aekondratiev.github.io/helm-charts
+</code></pre></div></div>
+
+<p>If you had already added this repo earlier, run <code class="language-plaintext highlighter-rouge">helm repo update</code> to retrieve
+the latest versions of the packages.  You can then run <code class="language-plaintext highlighter-rouge">helm search repo
+aekondratiev</code> to see the charts.</p>
+
+<p>To install the <chart-name> chart:</chart-name></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>helm install zabbix aekondratiev/zabbix-server
+</code></pre></div></div>
+
+<p>To uninstall the chart:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>helm delete zabbix
+</code></pre></div></div>
+
+
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>
